@@ -21,6 +21,7 @@ const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chor
 
 const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 
+//Local Variables
 const isClicked = (door) => {
   if (door.src === closedDoorPath) {
     return false;
@@ -56,6 +57,13 @@ choreDoor = Math.floor(Math.random() * numClosedDoors);
   }
 };
 
+const gameOver = (status) => {
+  if (status === 'win') {
+  startButton.innerHTML = 'You win! Play again?';
+}
+};
+
+// Door clicked functionality
 door1.onclick = () => {
   if(!isClicked(doorImage1)) {
   doorImage1.src = openDoor1;
@@ -77,10 +85,6 @@ door3.onclick = () => {
 }
 };
 
-const gameOver = (status) => {
-  if (status === 'win') {
-  startButton.innerHTML = 'You win! Play again?';
-}
-};
+
 
 randomChoreDoorGenerator();

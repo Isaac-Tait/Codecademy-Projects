@@ -16,7 +16,7 @@ let openDoor2;
 let openDoor3;
 
 const randomChoreDoorGenerator = () => {
-    const choreDoor = Math.floor(Math.random() * numClosedDoors);
+    let choreDoor = Math.floor(Math.random() * numClosedDoors);
     if(choreDoor === 0) {
       openDoor1 = botDoorPath;
       openDoor2 = beachDoorPath;

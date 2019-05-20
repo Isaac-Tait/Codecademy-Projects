@@ -25,7 +25,7 @@ const randomChoreDoorGenerator = () => {
       openDoor2 = botDoorPath;
       openDoor1 = beachDoorPath;
       openDoor3 = spaceDoorPath;
-    } else { (choreDoor === 2);
+    } else {
       openDoor3 = botDoorPath;
       openDoor2 = beachDoorPath;
       openDoor1 = spaceDoorPath;

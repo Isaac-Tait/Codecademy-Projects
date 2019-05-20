@@ -48,5 +48,3 @@ door2.onclick = () => {
 door3.onclick = () => {
  doorImage3.src = openDoor3;
 };
-
-randomChoreDoorGenerator();

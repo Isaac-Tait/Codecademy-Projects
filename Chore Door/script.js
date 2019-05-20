@@ -11,19 +11,33 @@ const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chor
 const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 
 door1.onclick = () => {
+  if(!isClicked(doorImage1)) {
   doorImage1.src = openDoor1;
   playDoor();
+}
 };
 
 door2.onclick = () => {
+  if(!isClicked(doorImage1)) {
   doorImage2.src = openDoor2;
   playDoor();
+}
 };
 
 door3.onclick = () => {
+  if(!isClicked(doorImage1)) {
   doorImage3.src = openDoor3;
   playDoor();
+}
 };
+
+const gameOver = () => {
+  if (status === 'win') {
+  startButton.innerHTML = 'You win! Play again?';
+}
+};
+
+const startButton = document.getElementById('start');
 
 let numClosedDoors = 3;
 let openDoor1;
@@ -31,7 +45,11 @@ let openDoor2;
 let openDoor3;
 
 const isClicked = (door) => {
-  functionTwo();
+  if (door.src === closedDoorPath) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
 const playDoor = () => {

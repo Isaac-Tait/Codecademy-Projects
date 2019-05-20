@@ -8,11 +8,6 @@ body {
     text-align: center;
   }
   
-  .door-frame {
-    cursor: pointer;
-    padding: 10px;
-  }
-  
   .title-row {
     margin-top: 42px;
     margin-bottom: 21px;
@@ -47,6 +42,11 @@ body {
 
   .door-row {
     text-align: center;
+  }
+
+  .door-frame {
+    cursor: pointer;
+    padding: 10px;
   }
 
   .start-row {

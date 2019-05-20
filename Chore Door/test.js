@@ -1,6 +1,7 @@
 /* Tried this approach after reading this forum post https://discuss.codecademy.com/t/chore-door-step-45-function-not-working/359648/3
 Unfortunately, it did not work :_( */
 
+// removed all var & const declarations...
 doorImage1 = document.getElementById("door1");
 
 doorImage2 = document.getElementById("door2");
@@ -14,7 +15,7 @@ beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door
 spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 
 const randomChoreDoorGenerator = () => {
-  let choreDoor = Math.floor(Math.random()*numClosedDoors);
+  let choreDoor = Math.floor(Math.random()*numClosedDoors); // spaces removed...
   if (choreDoor === 1) {
     openDoor1 = botDoorPath;
     openDoor2 = beachDoorPath;

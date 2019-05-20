@@ -16,15 +16,19 @@ let openDoor2;
 let openDoor3;
 
 const randomChoreDoorGenerator = () => {
+  
     let choreDoor = Math.floor(Math.random() * numClosedDoors);
+
     if (choreDoor === 0) {
       openDoor1 = botDoorPath;
       openDoor2 = beachDoorPath;
       openDoor3 = spaceDoorPath;
+
     } else if (choreDoor === 1) {
       openDoor2 = botDoorPath;
       openDoor1 = beachDoorPath;
       openDoor3 = spaceDoorPath;
+
     } else {
       openDoor3 = botDoorPath;
       openDoor2 = beachDoorPath;

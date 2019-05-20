@@ -11,15 +11,15 @@ const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chor
 const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 
 door1.onclick = () => {
-  doorImage1.src = botDoorPath;
+  doorImage1.src = openDoor1;
 };
 
 door2.onclick = () => {
-  doorImage2.src = beachDoorPath;
+  doorImage2.src = openDoor2;
 };
 
 door3.onclick = () => {
-  doorImage3.src = spaceDoorPath;
+  doorImage3.src = openDoor3;
 };
 
 let numClosedDoors = 3;
@@ -43,3 +43,5 @@ let choreDoor = Math.floor(Math.random()*numClosedDoors);
       openDoor1 = spaceDoorPath;
   }
 };
+
+randomChoreDoorGenerator();

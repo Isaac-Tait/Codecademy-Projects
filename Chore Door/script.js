@@ -12,14 +12,17 @@ const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chor
 
 door1.onclick = () => {
   doorImage1.src = openDoor1;
+  playDoor();
 };
 
 door2.onclick = () => {
   doorImage2.src = openDoor2;
+  playDoor();
 };
 
 door3.onclick = () => {
   doorImage3.src = openDoor3;
+  playDoor();
 };
 
 let numClosedDoors = 3;
@@ -27,8 +30,20 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
+const isClicked = (door) => {
+  functionTwo();
+};
+
+const playDoor = () => {
+  numClosedDoors--;
+  if (numClosedDoor === 0) {
+    gameOver();
+  }
+};
+
 const randomChoreDoorGenerator = () => {
 choreDoor = Math.floor(Math.random() * numClosedDoors);
+
     if (choreDoor === 0) {
       openDoor1 = botDoorPath;
       openDoor2 = beachDoorPath;

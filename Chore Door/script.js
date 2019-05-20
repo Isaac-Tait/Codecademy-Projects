@@ -64,14 +64,14 @@ door1.onclick = () => {
 };
 
 door2.onclick = () => {
-  if(!isClicked(doorImage1)) {
+  if(!isClicked(doorImage2)) {
   doorImage2.src = openDoor2;
   playDoor();
 }
 };
 
 door3.onclick = () => {
-  if(!isClicked(doorImage1)) {
+  if(!isClicked(doorImage3)) {
   doorImage3.src = openDoor3;
   playDoor();
 }

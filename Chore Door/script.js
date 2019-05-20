@@ -1,8 +1,8 @@
-var doorImage1 = document.getElementById('door1');
+let doorImage1 = document.getElementById('door1');
 
-var doorImage2 = document.getElementById('door2');
+let doorImage2 = document.getElementById('door2');
 
-var doorImage3 = document.getElementById('door3');
+let doorImage3 = document.getElementById('door3');
 
 const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
 

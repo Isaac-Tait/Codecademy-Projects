@@ -30,7 +30,7 @@ const randomChoreDoorGenerator = () => {
       openDoor2 = beachDoorPath;
       openDoor1 = spaceDoorPath;
   }
-}; //I was missing this
+};
   
   doorImage1.onclick = () => {
     doorImage1.src=openDoor1;

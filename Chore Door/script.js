@@ -30,10 +30,10 @@ const isClicked = (door) => {
   }
 };
 
-const playDoor = () => {
+const playDoor = (door) => {
   numClosedDoors--;
   if (numClosedDoor === 0) {
-    gameOver();
+    gameOver('win');
   }
 };
 

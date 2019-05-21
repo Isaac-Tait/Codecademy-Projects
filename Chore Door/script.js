@@ -30,12 +30,17 @@ const isClicked = (door) => {
   }
 };
 
-const playDoor = (door) => {
-  numClosedDoors--;
-  if (numClosedDoor === 0) {
-    gameOver('win');
-  }
-};
+  const playDoor = (door) => {
+    numClosedDoors--;
+    if (numClosedDoor === 0) {
+      gameOver('win');
+    }
+    const gameOver = (status) => {
+    if (status === 'win') {
+    startButton.innerHTML = 'You win! Play again?';
+      }
+    }
+  };
 
 const randomChoreDoorGenerator = () => {
 choreDoor = Math.floor(Math.random() * numClosedDoors);
@@ -60,7 +65,7 @@ choreDoor = Math.floor(Math.random() * numClosedDoors);
 const gameOver = (status) => {
   if (status === 'win') {
   startButton.innerHTML = 'You win! Play again?';
-}
+  }
 };
 
 // Door clicked functionality
@@ -68,23 +73,22 @@ door1.onclick = () => {
   if(!isClicked(doorImage1)) {
   doorImage1.src = openDoor1;
   playDoor();
-}
-}
+  }
+};
 
 door2.onclick = () => {
   if(!isClicked(doorImage2)) {
   doorImage2.src = openDoor2;
   playDoor();
-}
-}
+  }
+};
 
 door3.onclick = () => {
   if(!isClicked(doorImage3)) {
   doorImage3.src = openDoor3;
   playDoor();
-}
-}
-
+  }
+};
 
 
 randomChoreDoorGenerator();

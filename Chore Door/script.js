@@ -69,21 +69,21 @@ door1.onclick = () => {
   doorImage1.src = openDoor1;
   playDoor();
 }
-};
+}
 
 door2.onclick = () => {
   if(!isClicked(doorImage2)) {
   doorImage2.src = openDoor2;
   playDoor();
 }
-};
+}
 
 door3.onclick = () => {
   if(!isClicked(doorImage3)) {
   doorImage3.src = openDoor3;
   playDoor();
 }
-};
+}
 
 
 

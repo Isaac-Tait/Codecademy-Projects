@@ -1,4 +1,3 @@
-//const door1 = require('door1');
 //Global Variables 
 let doorImage1 = document.getElementById('door1');
 

@@ -35,11 +35,6 @@ const isClicked = (door) => {
     if (numClosedDoor === 0) {
       gameOver('win');
     }
-    const gameOver = (status) => {
-    if (status === 'win') {
-    startButton.innerHTML = 'You win! Play again?';
-      }
-    }
   };
 
 const randomChoreDoorGenerator = () => {
@@ -83,6 +78,12 @@ doorImage3.onclick = () => {
   playDoor();
   }
 };
+
+const gameOver = (status) => {
+  if (status === 'win') {
+  startButton.innerHTML = 'You win! Play again?';
+    }
+  };
 
 
 randomChoreDoorGenerator();
